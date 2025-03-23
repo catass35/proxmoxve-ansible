@@ -1,6 +1,6 @@
-resource "proxmox_virtual_environment_network_linux_vlan" "vlan01" {
+resource "proxmox_virtual_environment_network_linux_vlan" var.vlan_ress {
   node_name = "proxmoxve"
-  name      = "vlan01"
+  name      = var.vlan_name
 
-  comment = "VLAN 01 - ansible"
+  comment = var.vlan_comment
 }
